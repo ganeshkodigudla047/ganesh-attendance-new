@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Register</h2>
+    <form id="registerForm">
+        <input type="text" id="registerName" placeholder="Name" required>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <select id="registerRole" required>
+            <option value="">Select Role</option>
+            <option value="Student">Student</option>
+            <option value="Incharge">Incharge</option>
+            <option value="Admin">Admin</option>
+        </select>
+
+        <!-- Video preview for facial capture -->
+        <div id="videoContainer" style="display:none;">
+            <video id="video" width="300" height="225" autoplay></video>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script src="register.js"></script>
+</body>
+</html>

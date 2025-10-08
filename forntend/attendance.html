@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mark Attendance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Mark Attendance</h2>
+    <form id="attendanceForm">
+        <label for="method">Choose Method:</label>
+        <select id="method" required>
+            <option value="">Select Method</option>
+            <option value="Facial">Facial Recognition</option>
+            <option value="QR">QR Code Scan</option>
+        </select>
+        <button type="submit">Start</button>
+    </form>
+
+    <div id="scannerContainer" style="margin-top:20px;">
+        <!-- Camera/QR scanner will appear here -->
+        <video id="video" width="400" height="300" autoplay style="display:none;"></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
